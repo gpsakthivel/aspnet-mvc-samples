@@ -1,0 +1,8 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@(Html.Bold().ReportViewer("viewer")
+    .ReportServiceUrl("/api/ReportViewer")
+    .ReportPath("~/Resources/sales-order-detail.rdl")
+)
